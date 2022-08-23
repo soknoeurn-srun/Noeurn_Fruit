@@ -1,0 +1,397 @@
+*{
+   margin: 0;
+   padding: 0;
+   font-family: sans-serif;
+   list-style: none;
+   text-decoration: none;
+}
+body{
+   background: #1D2645;
+}
+
+.logo_menu_sign-in {
+   padding: 20px;
+   display: flex;
+   justify-content: space-between;
+}
+.logo_and_menu,
+.menu ul{
+   display: flex;
+}
+.menu ul li, .logo {
+   padding: 8px;
+}
+.logo{
+   color: #fff;
+   display: flex;  
+}
+.logo .cn{
+   color: #F19D3A;
+   font-size: 2rem;
+}
+.logo h3 {
+   margin-top: 10px;
+}
+
+.menu, ul li {
+   margin-left: 30px;
+   position: relative;
+}
+.menu ul li a:not(.active){
+   color: gray;
+}
+.menu ul li a:not(.active):hover{
+   color: #F19D3A;
+}
+.active::before {
+   content: "";
+   position: absolute;
+   bottom: 0;
+   width: 25px;
+   height: 5px;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   background: #F19D3A;
+   color: #fff;
+   border-radius: 5px;
+}
+ .active{
+   color: #fff;
+}
+
+.sign-in_and_sign-up button{
+   background: transparent;
+   width: 80px;
+   border: none;
+   padding: 8px;
+   border-radius: 20px;
+   color: #fff;
+   background: #d9d9d91b;
+   border: 1px solid #ffffff50;
+   transition: ease-out;
+}
+.sign-in_and_sign-up button:first-child{
+   background: #F19D3A;
+   border: 1.5px dotted;
+}
+.sub_header {
+   display: grid;
+   grid-template-columns:50% 40% 10%;
+   position: relative;
+   margin: 4% 0 2% 0;
+}
+.sub_header_1,
+.sub_header_3 .box,
+.hearder_card .icon,
+.small_card .item,
+.top_item,
+.left,
+.right,
+.footer {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.sub_header_1 .img {
+   width: 50%;   
+}
+.header img {
+   border-radius: 50%;
+   width: 100%;
+   object-fit: fill;
+}
+.hearder_txt h3{
+   font-size: 40px;
+   text-transform: uppercase;
+   color: #fff;
+}
+.hearder_txt h3 span{
+   color: #F19D3A;
+}
+.body_txt p{
+   margin: 20px 0;
+   color: #d9d9d996;
+}
+
+.footer_btn button{
+   padding: 10px;
+   border-radius: 10px;
+   border: none;
+   background: #d9d9d93a;
+   color: #fff;
+}
+.footer_btn button:first-child{
+   background: #F19D3A;
+   margin-right: 10px;
+}
+.sub_header_3 .box {
+   width: 50px;
+   height: 50px;
+   margin: 0 0 15px 0;
+   border-radius: 50%;
+   background: #d9d9d93a;
+   box-shadow: 0 0 10px 2px;
+}
+.header h2,
+.name_txt {
+   color: #fff;
+   text-align: center;
+}
+.big_card {
+   margin:20px 0px;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap: 20px;
+   box-sizing: border-box;
+}
+.hearder_card {
+   padding: 20px;
+   border-radius: 10px;
+  
+   box-sizing: border-box;
+   background:linear-gradient(to top, #101123, #252D51);
+}
+.hearder_card:hover{
+   background: #d9d9d91d;
+
+}
+.big_card .hearder_card .sub_header{
+   display: flex;
+   margin-bottom: 15px;
+   
+}
+.hearder_card .icon{
+   width: 50px;
+   height: 50px;
+   background: #f6f2f2;
+   border-radius: 5px;
+}
+.icon img{
+   width: 100%;
+   height: auto;
+   object-fit: contain;
+}
+.hearder_card h3 {
+   margin-top: 15px;
+   color: #fff;
+}
+
+.small_card {
+   margin: 10% 0;
+   display: grid;
+   grid-template-columns: repeat(5, 1fr);
+   grid-gap: 15px;
+}
+.top_item {
+   margin-left: 20px;
+}
+.small_card .top_item h2{
+   margin: 15px 0 20px 0;
+   color: #fff;
+}
+.top_item button {
+   background: #F19D3A;
+   padding: 10px;
+   width: 100px;
+   border: none;
+   border-radius: 40px;
+   color: #fff;
+}
+.small_card .item{
+   width: 70%;
+   height: 25vh;
+   text-align: center;
+   border-radius: 10px;
+   background: #ffffff08;
+   position: relative;
+}
+.small_card .first_item{
+   background: #ffffff63;
+   width: 72%;
+   height: 27vh;
+}
+.main_item .img{
+   position: absolute;
+   margin-top: -40%;
+   height: auto;
+}
+.main_item .orange img{
+   margin-right: 40px;
+}
+.main_item .img img {
+   width: 90px;
+}
+.main .img img {
+   margin-top: -30%;
+}
+.prices{
+   margin-top: 30px;
+   padding: 5px;
+}
+.prices span:first-child{
+   color: #F19D3A;
+}
+.prices span:last-child{
+   color: #fff;
+}
+.star span:last-child{
+   margin-bottom: 30px;
+}
+.main_item .item_txt p{
+   margin: 5px 0;
+}
+.show {
+   background: #F19D3A;
+   width: 100%;
+   height: 60vh;
+}
+.banana{
+   background-image: url("../img/bananas.png");
+   background-size: cover;
+   width: 100%;
+   height: 400px;
+}
+.discount{
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+}
+.percent{
+   margin-top: 21vh;
+   color: #fff;
+   margin-left: 100px;
+}
+.percent h2{
+   padding: 5px;
+}
+.percent h2 span{
+   font-size: 28px;
+}
+.bt-shop button{
+   margin-top: 20px;
+   border: none;
+   padding: 10px;
+   border-radius: 40px;
+   background: orange;
+}
+.about{
+   display: flex;
+   padding: 80px;
+   background: #0b0431;
+}
+.pic{
+   width: 50%;
+}
+.info{
+   width: 35%;
+}
+.customer{
+   color: white;
+   margin-bottom: 20px;
+}
+.rate{
+   color: white;
+}
+.rate p{
+   color: #f5deb384;
+   width: 500px;
+}
+.star{
+   display: flex;
+}
+.star span{
+   color: orange;
+}
+.bt-back-next{
+   display: flex;
+   gap: 10px;
+}
+.back i{
+   background: orange;
+   border-radius: 50%;
+   padding: 10px;
+   text-align: center;
+}
+.bt-back-next .next i{
+   border-radius: 50%;
+   background: #cccaca7e;
+   padding: 10px;
+}
+.bt-back-next{
+   display: flex;
+   justify-content: flex-end;
+}
+.information-center{
+   background: rgb(7, 1, 20);
+   height: 100px;
+   padding: 50px;
+   display: flex;
+}
+.left{
+   width: 20%;
+   color: white;
+   flex-direction: column;
+   border-right: 2px solid #d7d5d579;
+}
+.left span{
+   color: orange;
+}
+.right{
+   width: 80%;
+   color: white;
+   display: flex;
+   justify-content: space-around;
+}
+.center {
+   width: 49%;
+   text-align: justify;
+   
+}
+.button button{
+   width:100px;
+   padding: 10px;
+   border-radius: 40px;
+   margin: 3px;
+   border: none;
+   outline: none;
+}
+.join button{
+   background: orange;
+}
+.more-info button{
+   background: #ffffff6b;
+}
+.footer{
+   padding: 50px;
+}
+.footer-left{
+   width: 40%;
+   margin-left: 5%;
+}
+.info-top{
+   margin-bottom: 30px;
+}
+.info-bottum p{
+   color: white;
+}
+.footer-left .info-top h4{
+   color: white;
+}
+.footer-left .info-top h4 span{
+   color: orange;
+}
+.footer-right{
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+   color: white;
+}
+.footer-right p{
+   color: rgba(255, 255, 255, 0.486);
+   margin-top: 10px;
+}
+.footer-right h4{
+   margin-bottom: 30px;
+}
+
+
